@@ -59,7 +59,18 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -370,15 +381,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#an-ethical-society" class="md-nav__link">
-    <span class="md-ellipsis">
-      An ethical society
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
       Documentation
@@ -460,15 +462,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#an-ethical-society" class="md-nav__link">
-    <span class="md-ellipsis">
-      An ethical society
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
       Documentation
@@ -493,23 +486,31 @@
 
 
 <h1 id="six-fois-sept">Six Fois Sept</h1>
+<p><a class="glightbox" href="../assets/sixfoissept_logo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Company Logo" class="center" src="../assets/sixfoissept_logo.png" /></a></p>
 <p>As specialists in Data Science, we develop robust and reliable methods for building data assets. We convert your data into usable, readable information geared towards decision-making. Our work in artificial intelligence is done with a collaborative approach, allowing for a shared vision of objectives and results.</p>
 <p>We promote a more popular vision of Data Science, while utilizing robust algorithms.</p>
 <p>Since January 2021, the APAVE group has taken a 50% stake in SixFoisSept’s capital.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>ETHICS AND TRANSPARENCY</strong> <br>
+Data shapes the world. They can help improve
+by embodying the values ​​of ethics and transparency. <br>
+SixFoisSept is a signatory of the <strong>“Hippocratic Oath for DataScience”</strong> charter.</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><strong>Visit our website</strong>: <a href="https://www.sixfoissept.com/en/">www.sixfoissept.com/</a><br>
 <strong>Contact</strong>: contact@sixfoissept.com<br>
 <strong>Location</strong>: Paris II</p>
 </div>
-<p><img alt="Company Logo" src="../assets/sixfoissept_logo.png" /></p>
-<h2 id="an-ethical-society">An ethical society</h2>
-<p>SixFoisSept is a company built on two fundamentals. Technical excellence in DataScience methods and tools on the one hand and ethics on the other.</p>
-<p>We built the SixFoisSept project by writing Data For Good into our DNA. We carry out our projects on a fair, ethical basis and without black boxes. We invest part of our profits in causes that we believe are right (the fight against cancer for years or the program of access to school for disadvantaged children “Freedom Through Education” in Nepal).</p>
-<p>SixFoisSept is a signatory of the “Hippocratic Oath for DataScience” charter.</p>
 <h2 id="documentation">Documentation</h2>
 <p>If you want to get detailed information about 'My Package,' you can check the <a href="../api/">My Package</a> section.</p>
 <p>For more information about building charts and tables, check the <a href="../others/">Graphs &amp; Tables</a> section.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Certain areas of the site are currently being developed and may not be accessible or contain complete information. We apologize for any inconvenience this may cause.</p>
+<p>Feel free to explore the available content, and check back later for updates as we continue to expand our documentation.</p>
+</div>
 
 
 
@@ -560,5 +561,5 @@
       <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

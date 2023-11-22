@@ -59,7 +59,18 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -389,9 +400,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ou-vit-on-le-mieux-en-france-lexpress" class="md-nav__link">
+  <a href="#ou-vit-on-le-mieux-en-france" class="md-nav__link">
     <span class="md-ellipsis">
-      Où vit-on le mieux en France? ( l'Express)
+      Où vit-on le mieux en France?
     </span>
   </a>
   
@@ -451,9 +462,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ou-vit-on-le-mieux-en-france-lexpress" class="md-nav__link">
+  <a href="#ou-vit-on-le-mieux-en-france" class="md-nav__link">
     <span class="md-ellipsis">
-      Où vit-on le mieux en France? ( l'Express)
+      Où vit-on le mieux en France?
     </span>
   </a>
   
@@ -476,7 +487,9 @@
 
 <h1 id="tables">Tables</h1>
 <p>Voici l'exemple d'une table. </p>
-<h2 id="ou-vit-on-le-mieux-en-france-lexpress">Où vit-on le mieux en France? (<img alt="😉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f609.svg" title=":wink:" /> l'Express)</h2>
+<p><a class="glightbox" href="../assets/Cadran_logo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Cadran Logo" src="../assets/Cadran_logo.png" style="height:80px" /></a></p>
+<h2 id="ou-vit-on-le-mieux-en-france">Où vit-on le mieux en France?</h2>
+<p><img alt="😉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f609.svg" title=":wink:" /> Le Cadran pour l'Express</p>
 <table>
 <thead>
 <tr>
@@ -519,6 +532,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L'ordre des villes ne represente pas leur classement. </p>
+</div>
 <h1 id="mermaid">Mermaid</h1>
 <p>Mermaid permet de décrire des schémas en symboles qui seront traduits au rendu de la page web.</p>
 <p>Source : <a href="https://mermaid.js.org/intro/">mermaid</a></p>
@@ -682,5 +699,5 @@ Note over A,B: Une autre note
       <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
