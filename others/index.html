@@ -52,6 +52,8 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../assets/stylesheets/badge.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -88,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tables" class="md-skip">
+        <a href="#badges" class="md-skip">
           Skip to content
         </a>
       
@@ -363,17 +365,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Graphs & Tables
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -383,34 +374,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ou-vit-on-le-mieux-en-france" class="md-nav__link">
-    <span class="md-ellipsis">
-      Où vit-on le mieux en France?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -455,23 +418,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ou-vit-on-le-mieux-en-france" class="md-nav__link">
-    <span class="md-ellipsis">
-      Où vit-on le mieux en France?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -485,6 +431,13 @@
                   
 
 
+<h1 id="badges">Badges</h1>
+<p>On peut ajouter des badges dans notre documentation, ils peuvent contenir les liens, donner les informations sur la couverture des tests ou d'autres information essentielles au bon fonctionnement de votre projet.</p>
+<p><span class="badge-group">
+    <span class="badge badge-normal"><span class=sep> [</span><span class=title>Programming language</span><span class=sep> | </span><span class=value>Python</span><span class=sep>] </span></span>
+    <span class="badge badge-normal"><span class=sep> [</span><span class=title>Required version</span><span class=sep> | </span><span class=value>&gt;=3.9</span><span class=sep>] </span></span>
+</span></p>
+<p>Plus d'info sur les badges : <a href="https://mkdocs-badges.six-two.dev/">mkdocs-badges</a> </p>
 <h1 id="tables">Tables</h1>
 <p>Voici l'exemple d'une table. </p>
 <p><a class="glightbox" href="../assets/Cadran_logo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Cadran Logo" src="../assets/Cadran_logo.png" style="height:80px" /></a></p>
@@ -697,6 +650,8 @@ Note over A,B: Une autre note
     
     
       <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      
+        <script src="../assets/javascripts/badge.js" async></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
